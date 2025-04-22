@@ -37,9 +37,9 @@ Pattern Discovery - Enabled proactive anomaly detection in time-series and categ
 ## 3. Folder Structure & Design Patterns
 anomaly-detector-ml/
 
-app/                  # Core Python logic (all reusable logic lives here)
+app/        -          # Core Python logic (all reusable logic lives here)
 
-data/                 # Datasets for training/testing
+data/        -         # Datasets for training/testing
 
 results/              # Output (CSV files, plots)
 
