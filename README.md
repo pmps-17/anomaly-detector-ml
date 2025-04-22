@@ -24,15 +24,47 @@ This project implements a machine learning pipeline that:
 
 ##  Business Value
 
-Detection Accuracy - Improved by **80%** using ML models 
-Investigation Time - Reduced by **60%** through automation 
-False Positives - Lowered with contextual filtering 
-Pattern Discovery - Enabled proactive anomaly detection in time-series and categorical data 
+Detection Accuracy - Improved by **80%** using ML models. 
+Investigation Time - Reduced by **60%** through automation. 
+False Positives - Lowered with contextual filtering. 
+Pattern Discovery - Enabled proactive anomaly detection in time-series and categorical data. 
 
 
 
 ## 3. Folder Structure & Design Patterns
-<pre> <code> anomaly-detector-ml/ │ ├── app/ # Core Python logic (all reusable logic lives here) │ ├── __init__.py # To make it a Python package │ ├── data_loader.py # Load CSVs, handle missing values │ ├── detector_isolation.py # Isolation Forest │ ├── detector_zscore.py # Z-score detection │ ├── detector_dbscan.py # DBSCAN logic │ ├── evaluator.py # Accuracy, precision, recall │ ├── visualizer.py # Create plots (matplotlib/seaborn) │ ├── rag_retriever.py # (Optional) LangChain-based retriever │ └── main.py # CLI runner to connect everything │ ├── data/ # Datasets for training/testing ├── results/ # Output (CSV files, plots) ├── tests/ # Unit tests for each core component ├── .env # API keys (if RAG is used) ├── .gitignore # Ignore sensitive and unnecessary files ├── requirements.txt # All dependencies └── README.md # Project overview </code> </pre>
+anomaly-detector-ml/
+app/                  # Core Python logic (all reusable logic lives here).
+data/                 # Datasets for training/testing.
+results/              # Output (CSV files, plots).
+
+tests/                # Unit tests for each core component
+
+.env                  # API keys (if RAG is used)
+
+.gitignore            # Ignore sensitive and unnecessary files
+
+requirements.txt      # All dependencies
+
+README.md             # Project overview
+
+app/
+ __init__.py                   # To make it a Python package
+
+data_loader.py                 # Load CSVs, handle missing values
+
+detector_isolation.py          # Isolation Forest
+
+detector_zscore.py             # Z-score detection
+
+detector_dbscan.py             # DBSCAN logic
+
+evaluator.py                   # Accuracy, precision, recall
+
+visualizer.py                  # Create plots (matplotlib/seaborn)
+
+rag_retriever.py               # (Optional) LangChain-based retriever
+
+main.py                        # CLI runner to connect everything
 
 
 
