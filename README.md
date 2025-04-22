@@ -24,18 +24,23 @@ This project implements a machine learning pipeline that:
 
 ##  Business Value
 
-Detection Accuracy - Improved by **80%** using ML models. 
-Investigation Time - Reduced by **60%** through automation. 
-False Positives - Lowered with contextual filtering. 
-Pattern Discovery - Enabled proactive anomaly detection in time-series and categorical data. 
+Detection Accuracy - Improved by **80%** using ML models
+
+Investigation Time - Reduced by **60%** through automation
+
+False Positives - Lowered with contextual filtering
+
+Pattern Discovery - Enabled proactive anomaly detection in time-series and categorical data 
 
 
 
 ## 3. Folder Structure & Design Patterns
 anomaly-detector-ml/
-app/                  # Core Python logic (all reusable logic lives here).
-data/                 # Datasets for training/testing.
-results/              # Output (CSV files, plots).
+app/                  # Core Python logic (all reusable logic lives here)
+
+data/                 # Datasets for training/testing
+
+results/              # Output (CSV files, plots)
 
 tests/                # Unit tests for each core component
 
