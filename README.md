@@ -37,42 +37,42 @@ Pattern Discovery - Enabled proactive anomaly detection in time-series and categ
 ## 3. Folder Structure & Design Patterns
 anomaly-detector-ml/
 
-app/        -          # Core Python logic (all reusable logic lives here)
+app/        --          # Core Python logic (all reusable logic lives here)
 
-data/        -         # Datasets for training/testing
+data/        --         # Datasets for training/testing
 
-results/              # Output (CSV files, plots)
+results/      --        # Output (CSV files, plots)
 
-tests/                # Unit tests for each core component
+tests/        --        # Unit tests for each core component
 
-.env                  # API keys (if RAG is used)
+.env           --       # API keys (if RAG is used)
 
-.gitignore            # Ignore sensitive and unnecessary files
+.gitignore      --      # Ignore sensitive and unnecessary files
 
-requirements.txt      # All dependencies
+requirements.txt   --   # All dependencies
 
-README.md             # Project overview
+README.md      --       # Project overview
 
 
 app/
 
- __init__.py                   # To make it a Python package
+ __init__.py           --        # To make it a Python package
 
-data_loader.py                 # Load CSVs, handle missing values
+data_loader.py         --        # Load CSVs, handle missing values
 
-detector_isolation.py          # Isolation Forest
+detector_isolation.py     --     # Isolation Forest
 
-detector_zscore.py             # Z-score detection
+detector_zscore.py       --      # Z-score detection
 
-detector_dbscan.py             # DBSCAN logic
+detector_dbscan.py       --      # DBSCAN logic
 
-evaluator.py                   # Accuracy, precision, recall
+evaluator.py          --         # Accuracy, precision, recall
 
-visualizer.py                  # Create plots (matplotlib/seaborn)
+visualizer.py         --         # Create plots (matplotlib/seaborn)
 
-rag_retriever.py               # (Optional) LangChain-based retriever
+rag_retriever.py      --         # (Optional) LangChain-based retriever
 
-main.py                        # CLI runner to connect everything
+main.py          --              # CLI runner to connect everything
 
 
 
