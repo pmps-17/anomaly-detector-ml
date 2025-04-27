@@ -1,0 +1,5 @@
+- High deviation in transaction volume compared to the average indicates a potential anomaly.
+- Outlier clusters in data often point to errors, fraud, or system glitches.
+- Rapid jumps in feature values between consecutive records could signal abnormal behavior.
+- A group of entries isolated far from the main data cluster should be reviewed.
+- Anomalies can also happen when a pattern doesn't match seasonal or historical trends.
